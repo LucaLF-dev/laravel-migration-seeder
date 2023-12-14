@@ -21,17 +21,16 @@
         <tbody>
             @forelse ($trains as $train)
             <tr>
-                <th>{{$train->Azienda}}</th>
-                <th>{{$train->Stazione_di_partenza}}</th>
-                <th>{{$train->Stazione_di_arrivo}}</th>
-                <th>{{$train->Orario_di_partenza}}</th>
-                <th>{{$train->Orario_di_arrivo}}</th>
-                <th>{{$train->Codice_treno}}</th>
-                <th>{{$train->Numero_carrozze}}</th>
-                <th>{{$train->Posto_numero}}</th>
-                <th>{{$train->In_Orario}}</th>
-                <th>{{$train->Cancellato}}</th>
-             
+                <th>{{$train->azienda}}</th>
+                <th>{{$train->stazione_di_partenza}}</th>
+                <th>{{$train->stazione_di_arrivo}}</th>
+                <th>{{$train->orario_di_partenza}}</th>
+                <th>{{$train->orario_di_arrivo}}</th>
+                <th>{{$train->codice_treno}}</th>
+                <th>{{$train->numero_carrozze}}</th>
+                <th>{{$train->posto_numero}}</th>
+                <th>{{$train->in_orario}}</th>           
+                <th>{{$train->cancellato}}</th>
             </tr>
             @empty
                Nessun treno disponibile all' orario stabilito
